@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: orange;
+    font-family: 'Orbitron', sans-serif;
+}
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.child {
+    max-width: 400px;
+    width: 100%;
+    border: solid;
+    border-radius: 10px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding-right: 20px;
+    padding-left: 10px;
+    text-align: right;
+    height: 80px;
+    border-radius: 3px;
+    color: white;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.previous-operand {
+    margin-top: 2px;
+    font-size: 1rem;
+}
+
+.current-operand {
+    margin-top: 2px;
+    font-size: 2rem;
+}
+
+.all-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+button {
+    background: transparent;
+    border: solid;
+    border-radius: 50px;
+    height: 80px;
+    font-size: 35px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+button:hover {
+    background-color: white;
+}
+
+#all-clear,
+#clear {
+    background-color: #f0595f;
+    color: rgb(0, 0, 0);
+}
+
+#all-clear:hover,
+#clear:hover {
+    background-color: white;
+}
+
+#equals {
+    background-color: #2e86c0;
+}
+#equals:hover {
+    background-color: white;
+}
+
+footer {
+    background-color: rgb(173, 164, 164);
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+  }
+  
+  #github {
+    margin-left: 5px;
+  }
